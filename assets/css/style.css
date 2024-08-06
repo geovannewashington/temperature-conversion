@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --primary-color: #ff6347; /* Tomato color for primary elements */
+  --primary-color-dark: #e5533c; /* Darker shade of the primary color */
+  --background-color: #f0f0f0; /* Light background color for the body */
+  --container-background: #ffffff; /* Background color for the container */
+  --input-border-color: #ccc; /* Border color for inputs */
+  --input-focus-border-color: var(--primary-color-dark); /* Focus border color for inputs */
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: var(--container-background);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--primary-color-dark);
+  margin-bottom: 20px;
+}
+
+#textBox {
+  width: calc(100% - 24px);
+  text-align: center;
+  font-size: 2em;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: border 0.3s;
+}
+
+#textBox:focus {
+  border: 2px solid var(--input-focus-border-color);
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+#result {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: var(--primary-color-dark);
+}
